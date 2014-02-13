@@ -1,0 +1,110 @@
+﻿
+
+body {
+    background-color: rgb(20,20,20);
+}
+
+
+.full-fit {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.highlight {
+    border: #97D9EA 4px groove;
+    border-radius: 2px;
+}
+
+.my-button {
+    width: 49%!important;
+    border-radius: 0px;
+    background-color: rgb(70,70,70);
+    color: white;
+}
+
+.my-input {
+    border-radius: 0px;
+}
+
+.mynav-primary .active a, .mynav-primary .active a:hover {
+    background-color: rgb(66,139,202)!important;
+    color: white!important;
+}
+
+.mynav-success .active a, .mynav-success .active a:hover {
+    background-color: rgb(92,184,92)!important;
+    color: white!important;
+}
+
+.mynav-danger .active a, .mynav-danger .active a:hover {
+    background-color: rgb(217,83,79)!important;
+    color: white!important;
+}
+
+.mynav-warning .active a, .mynav-warning .active a:hover {
+    background-color: rgb(240,173,78)!important;
+    color: white!important;
+}
+
+.mynav-info .active a, .mynav-info .active a:hover {
+    background-color: rgb(91,192,222)!important;
+    color: white!important;
+}
+
+.mynav-primary li a {
+    color: rgb(66,139,202)!important;
+}
+
+.mynav-success li a {
+    color: rgb(92,184,92)!important;
+}
+
+.mynav-danger li a {
+    color: rgb(217,83,79)!important;
+}
+
+.mynav-warning li a {
+    color: rgb(240,173,78)!important;
+}
+
+.mynav-info li a {
+    color: rgb(91,192,222)!important;
+}
+
+.mymedia {
+    width: 200px;
+    color: #F1F1F1;
+}
+
+.media-object {
+    padding: 10px;
+    width: 0px;
+}
+
+.media-heading {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Bell MT', Arial, Tahoma;
+    margin-top: 5px;
+}
+
+.media-body {
+    vertical-align: top;
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    font-family: Arial;
+}
+
+#toolbar, #toolbar tr td {
+    height: 80px;
+    padding: 4px;
+    margin: 5px;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+#toolbar tr td:hover {
+    background-color: #909090;
+}

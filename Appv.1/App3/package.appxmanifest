@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="1c7eb23b-6ec1-4ca7-8c17-fb11a4bff897" Version="1.0.0.0" Publisher="CN=Syamantak" />
+  <Properties>
+    <DisplayName>App3</DisplayName>
+    <PublisherDisplayName>Syamantak</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Web.DO" Logo="logof.png" SmallLogo="logo30.jpg" Description="Web Developement GUI" ForegroundText="light" BackgroundColor="#97D9EA">
+        <DefaultTile ShowName="allLogos" WideLogo="logowide.jpg" />
+        <SplashScreen Image="splash.jpg" BackgroundColor="#97D9EA" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

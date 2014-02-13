@@ -1,0 +1,384 @@
+﻿<html>
+<head>
+</head>
+<link rel="stylesheet" href="//Microsoft.WinJS.1.0/css/ui-light.css">
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/web.do.css" />
+<script src="/js/jquery-2.0.3.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/appathon.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+     <
+
+<script src="/js/jquery-ui.js"></script>
+<script>var i = 6;
+    $(function () {
+        
+        height = $(this).height;
+        width = $(this).width;
+        pos = $(this).position;
+        
+
+        $('.wrapper').mouseup(function () {
+            $(this).css("height", height);
+            $(this).css("width", width);
+         
+
+        });
+    })
+</script>
+<style type="text/css">
+    #previewApp {
+    width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 1000px;
+    background-color: #FCFCFC;
+    font-family: Arial;
+}
+
+</style>
+<body>
+    <script>function createFolder(filename) {
+    var destination = Windows.Storage.DownloadsFolder;
+
+    
+                            
+            i++;
+            var html = '<html><head><link href="css/bootstrap.css" rel="stylesheet" /><link href="/css/myStyle.css" /><script src="/js/jquery.js" >' + 
+                           '<\/script> <script src="/js/bootstrap.js" ><\/script></head><body><div id="content" >';
+            var html = html + document.getElementById('previewApp').innerHTML;
+            html += '</div></body></html>';
+            destination.createFileAsync(filename + '.html').done(function (newFile) {
+                Windows.Storage.FileIO.writeTextAsync(newFile, html);
+            }
+                );
+
+            // move the new file to the my website folder
+
+        
+    
+}</script>
+    <div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: rgb(40,40,40); color: #dcdcdc; border-radius: 0px;">
+                <div class="modal-header">
+                    Save The HTML
+                    </div>
+                <div id="modlBody" class="modal-body">
+                    <div class="input-group">
+                         <input id="fileName" type="text" class="form-control">
+                         <span class="input-group-addon">.html</span>
+                    </div>
+                 </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-default my-button" onclick="createFolder(document.getElementById('fileName').value);$('#saveModal').modal('hide');">Save</button>
+                    <button type="button" class="btn btn-default my-button" onclick="$('#saveModal').modal('hide');">Cancel</button>
+            </div>
+            </div></div></div>
+
+
+    <div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: rgb(40,40,40); color: #dcdcdc; border-radius: 0px;">
+                <div id="modalHeader" class="modal-header">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3 id="modalHead">Settings</h3>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" style="height: 70px; font-size: 40px;" class="btn btn-danger" onclick="removeDiv();$('#optionsModal').modal('hide');"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modalBody" class="modal-body">
+
+                    <form role="form">
+                        <div class="form-group">
+                            <label id="modalLabel0" for="modalContent0">Title</label>
+                            <input type="text" class="form-control my-input" id="modalContent0" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel1" for="modalContent1">Text</label>
+                            <input type="text" class="form-control my-input" id="modalContent1" placeholder="Enter Text">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel2" for="modalContent2">Link</label>
+                            <input type="text" class="form-control my-input" id="modalContent2" placeholder="Enter Link">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel3" for="modalContent3">Heading 1 Title</label>
+                            <input type="text" class="form-control my-input" id="modalContent3" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel4" for="modalContent4">Heading 1 Link</label>
+                            <input type="text" class="form-control my-input" id="modalContent4" placeholder="Enter Link">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel5" for="modalContent5">Heading 2 Title</label>
+                            <input type="text" class="form-control my-input" id="modalContent5" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel6" for="modalContent6">Heading 2 Link</label>
+                            <input type="text" class="form-control my-input" id="modalContent6" placeholder="Enter Link">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel7" for="modalContent7">Heading 3 Title</label>
+                            <input type="text" class="form-control my-input" id="modalContent7" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel8" for="modalContent8">Heading 3 Link</label>
+                            <input type="text" class="form-control my-input" id="modalContent8" placeholder="Enter Link">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel9" for="modalContent9">Heading 4 Title</label>
+                            <input type="text" class="form-control my-input" id="modalContent9" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel10" for="modalContent10">Heading 4 Link</label>
+                            <input type="text" class="form-control my-input" id="modalContent10" placeholder="Enter Link">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel11" for="modalContent11">Heading 5 Title</label>
+                            <input type="text" class="form-control my-input" id="modalContent11" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel12" for="modalContent12">Heading 5 Link</label>
+                            <input type="text" class="form-control my-input" id="modalContent12" placeholder="Enter Link">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel13" for="modalContent13">Font Size</label>
+                            <select id="modalContent13" name="dropdown">
+                                <optgroup>
+                                    <option value="10px">10</option>
+                                    <option value="12px">12</option>
+                                    <option value="15px" selected>15</option>
+                                    <option value="20px">20</option>
+                                    <option value="25px">25</option>
+                                    <option value="30px">30</option>
+                                    <option value="48px">48</option>
+                                    <option value="72px">72</option>
+                                    <option value="72px">96</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel14" for="modalContent14">Font Type</label>
+                            <select id="modalContent14" name="dropdown">
+                                <optgroup>
+                                    <option value="Arial" selected>Arial</option>
+                                    <option value="Calibri">Calibri</option>
+                                    <option value="Cambria">Cambria</option>
+                                    <option value="Lucida">Lucida</option>
+                                    <option value="Lucida Handwriting">Lucida Handwriting</option>
+                                    <option value="Tahoma">
+                                        <div>Tahoma</div>
+                                    </option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel15" for="modalContent15">Image Src</label>
+                            <input type="file" class="form-control my-input" id="modalContent15" placeholder="Upload Image">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel16" for="modalContent16"><b>Bold</b></label>
+                            <input type="checkbox" id="modalContent16">
+                            &nbsp;
+    <label id="modalLabel17" for="modalContent17"><i>Italic</i></label>
+                            <input type="checkbox" id="modalContent17">
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel18" for="modalContent18">Button Theme</label>
+                            <select id="modalContent18" name="dropdown">
+                                <optgroup>
+                                    <option value="primary" selected>Blue</option>
+                                    <option value="danger">Red</option>
+                                    <option value="warning">Yellow</option>
+                                    <option value="info">L. Blue</option>
+                                    <option value="success">Green</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel19" for="modalContent19">Navbar Theme</label>
+                            <select id="modalContent19" name="dropdown">
+                                <optgroup>
+                                    <option value="default" selected>Default</option>
+                                    <option value="inverse">Dark</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label id="modalLabel20" for="modalContent20">Background Color</label>
+                            <select id="modalContent20" name="dropdown">
+                                <optgroup>
+                                    <option value="#FCFCFC" style="background-color: #FCFCFC" selected></option>
+                                    <option value="#FFFFE0" style="background-color: #FFFFE0"></option>
+                                    <option value="#FFFACD" style="background-color: #FFFACD"></option>
+                                    <option value="#FAFAD2" style="background-color: #FAFAD2"></option>
+                                    <option value="#F5F5DC" style="background-color: #F5F5DC"></option>
+                                    <option value="#FFEFD5" style="background-color: #FFEFD5"></option>
+                                    <option value="#FFE4B5" style="background-color: #FFE4B5"></option>
+                                    <option value="#FFDAB9" style="background-color: #FFDAB9"></option>
+                                    <option value="#EEE8AA" style="background-color: #EEE8AA"></option>
+                                    <option value="#F0E68C" style="background-color: #F0E68C"></option>
+                                    <option value="#E6E6FA" style="background-color: #E6E6FA"></option>
+                                    <option value="#D8BFD8" style="background-color: #D8BFD8"></option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default my-button" onclick="validateModal(); $('#optionsModal').modal('hide');">Update</button>
+                    <button type="button" class="btn btn-default my-button" onclick="clearModal(); $('#optionsModal').modal('hide');">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="previewApp" style="width: 50%; z-index: 1; border: 2px solid black;">
+    </div>
+    <div id="Editor" style="overflow-x: scroll; color: white; position: absolute; display: none; top: 0px; left: 7.5%; width: 85%; height: 100%; background-color: black; z-index: 2; border: 2px solid black;">
+        <xmp id="editor2" style="width: 100%;"></xmp>
+    </div>
+
+    <button id="gSettingsDiv" type="button" style="position: fixed; right: 5px; top: 5px; width: 50px; height: 70px; font-size: 40px;" class="btn btn-warning" onclick="activateDiv(null,0); populateModal();" title="SETTINGS"><span class="glyphicon glyphicon-cog"></span></button>
+     <button id="saveButton" type="button" style="position: fixed; right: 5px; top: 85px; width: 50px; height: 70px; font-size: 40px;" class="btn btn-success" onclick="$('#saveModal').modal('show');" title="SAVE"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+   <button id="settingsDiv" type="button" style="position: fixed; right: 5px; top: 165px; width: 50px; height: 70px; font-size: 40px;" class="btn btn-info" onclick="populateModal();" title="SETTINGS"><span class="glyphicon glyphicon-wrench"></span></button>
+    <button id="deleteDiv" type="button" style="position: fixed; right: 5px; top: 245px; width: 50px; height: 70px; font-size: 40px;" class="btn btn-danger" onclick="removeDiv();" title="DELETE"><span class="glyphicon glyphicon-trash"></span></button>
+    <button id="expandUp" type="button" style="position: fixed; right: 5px; bottom: 205px; width: 50px; height: 70px; font-size: 23px;" class="btn btn-success" onclick="changeMode(0);" title="SIZE UP">GUI</button>
+    <button id="expandDown" type="button" style="visibility:collapse; position: fixed; right: 5px; bottom: 125px; width: 50px; height: 70px; font-size: 23px;" class="btn btn-success" onclick="changeMode(1);" title="SIZE DOWN">HTML</button>
+    <!--
+    <button id="expandUp" type="button" style="position: fixed; right:5px; bottom:185px; width:50px;  height:70px; font-size:40px;" class="btn btn-success"  onclick="expand(-100);" title="SIZE UP"><span class="glyphicon glyphicon-chevron-up"></span></button>
+<button id="expandDown" type="button" style="position: fixed; right:5px; bottom:105px; width:50px;  height:70px; font-size:40px;" class="btn btn-success" onclick="expand(100);" title="SIZE DOWN"><span class="glyphicon glyphicon-chevron-down"></span></button>
+     -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" style="height: 120px; overflow-x:scroll; overflow-y:hidden;" role="navigation">
+       <div id="footToolbar">
+        <table id="toolbar">
+            <tr>
+                <td>
+                    <div class="media mymedia" onclick="addContent('button');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Button </h4>
+                            Add a Button on the Page 
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('dropdown');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Dropdown </h4>
+                            Add a Dropdown Button
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('navbar');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Navbar</h4>
+                            Create a Navigation Bar
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('navigation-tabs');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Tabs I</h4>
+                            Create Tabs on Screen
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('navigation-pills');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Tabs II </h4>
+                            Another type of Tabs
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('panel');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Panel </h4>
+                            Add a Content Panel
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('jumbotron');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Title Bar </h4>
+                            Add a Title Bar on The Screen
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('image');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Image </h4>
+                            Add an Image to the webpage
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('list');">
+                        <div class="media-body">
+                            <h4 class="media-heading">List </h4>
+                            Create Lists with Links
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="media mymedia" onclick="addContent('paragraph');">
+                        <div class="media-body">
+                            <h4 class="media-heading">Text Box </h4>
+                            Add Your Text...
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table></div>
+          <script>
+
+              $(function () {
+                  $("#previewApp").resizable();
+              });
+    </script>
+       
+    </nav>
+    <!--
+        <button onclick='addContent("button")'>Button <span class="glyphicon glyphicon-trash"></span></button>
+ <button onclick='addContent("navbar")'>Navbar</button>
+ <button onclick='addContent("navigation-pills")'>NavPills</button>
+ <button onclick='addContent("navigation-tabs")'>NavTabs</button>
+ <button onclick='addContent("dropdown")'>Dropdown</button>
+ <button onclick='addContent("image")'>Image</button>
+ <button onclick='addContent("list")'>List</button>
+ <button onclick='addContent("jumbotron")'>Jumbotron</button>
+ <button onclick='addContent("panel")'>Panel</button>
+ <button onclick='addContent("paragraph")'>Paragraph</button>
+ <button onclick='populateModal()'>Modal</button>
+<button onclick="myResize()">Resize</button>
+    <button onclick="$('#Editor').toggle();var editorhtml = document.getElementById('previewApp').innerHTML;$('#editor2').text(editorhtml);">editor</button>
+    <img id="test" />
+  <script>
+     
+      $(function () {
+          $("#previewApp").resizable();
+
+
+      });
+    </script>
+        -->
+
+    <!-- 
+        -->
+</body>
+</html>

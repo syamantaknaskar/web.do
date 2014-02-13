@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>App3</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- App3 references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <style>
+        .wrapper {
+    background-color: rgba(0,0,0,0);
+}
+
+    .wrapper:hover {
+        background-color: #dcdcdc;
+    }
+    
+.highlight {
+    border: #97D9EA 4px groove;
+    border-radius: 2px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+    <!-- <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}" type="button"></button>
+    </div> -->
+    <div id="appbar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'top'}">
+         <hr
+             data-win-control="WinJS.UI.AppBarCommand"
+             data-win-options="{section:'global',type:'separator'}" />
+
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'newButton', label:'New', icon:'page',section:'global',type:'button',tooltip:'Create a new Project'}" ></button>
+         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'openButton', label:'Open', icon:'add',section:'global',type:'button',tooltip:'Open Existing Project'}" ></button>
+         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'exportButton', label:'Export', icon:'postupdate',section:'global',type:'button',tooltip:'Export a Project'}" ></button>
+         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'saveButton', label:'Save', icon:'save',section:'global',type:'button',tooltip:'Save Current Project'}" ></button>
+         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'deleteButton', label:'Delete', icon:'delete',section:'global',type:'button',tooltip:'Delete Current Project'}" ></button>
+         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'exitButton', label:'Exit', icon:'clear',section:'global',type:'button',tooltip:'Exit App'}" ></button>
+     </div> 
+</body>
+</html>

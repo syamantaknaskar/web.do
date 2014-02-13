@@ -1,0 +1,26 @@
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bin\Debug\resources.pri
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bin\Debug\AppxManifest.xml
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bin\Debug\App3.build.appxrecipe
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\priconfig.xml.intermediate
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\layout.resfiles.intermediate
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\resources.resfiles.intermediate
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\pri.resfiles.intermediate
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\priconfig.xml
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\layout.resfiles
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\resources.resfiles
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\pri.resfiles
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\LanguageQualifiers.txt
+c:\users\syamantak\documents\visual studio 2012\Projects\App3\App3\bld\Debug\ProjectArchitectures.txt
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bin\Debug\resources.pri
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bin\Debug\AppxManifest.xml
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bin\Debug\App3.build.appxrecipe
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\priconfig.xml.intermediate
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\layout.resfiles.intermediate
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\resources.resfiles.intermediate
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\pri.resfiles.intermediate
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\priconfig.xml
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\layout.resfiles
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\resources.resfiles
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\pri.resfiles
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\LanguageQualifiers.txt
+C:\Users\Syamantak\Documents\Visual Studio 2012\Projects\App3 - Copy\App3\bld\Debug\ProjectArchitectures.txt
